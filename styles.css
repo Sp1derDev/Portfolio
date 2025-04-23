@@ -1,0 +1,225 @@
+/*
+COLOR PALETTE
+Choose a color palette and paste the hex codes here to use below
+https://coolors.co/
+
+Keep these two:
+#343434 Dark color for fonts on a light background
+#F7FFF7 light color for fonts on a dark background
+
+Add your colors here...
+#dbc8b8
+#eecaa0
+#283618
+#606c38
+#000000
+*/
+
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  img {
+    width: 300px;
+  }
+  a {
+    /* color: ; */
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 5em;
+    line-height: 1;
+    color:#343434;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  header h2 {
+    font-size: 2em;
+    color:#343434;
+    font-family: "Open Sans";
+  }
+  header p {
+    color:#343434;
+    font-family: "Open Sans", sans-serif;
+  }
+  h1, h2 {
+    font-weight: 700;
+    margin: 0;
+  }
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  
+
+  
+  .item-details h3 + p {
+    font-style: italic;
+  }
+
+  
+  .item-details h3 ~ p {
+    margin: 0;
+  }
+
+  
+  .divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+  }
+  .divider > section:last-of-type {
+    border-bottom: none;
+  }
+  
+  
+  /* Profile
+  ------------------------------------*/
+  header {
+   
+    background-color: #dbc8b8;
+    font-family: "merriweather";
+
+  }
+ 
+  
+  /* Projects
+  ------------------------------------*/
+  .projects {
+    
+    background-color: #283618 ;
+  }
+  .projects a {
+   
+    color: #eecaa0;
+  }
+  .projects .btn {
+    
+    color: #000000;
+    background-color:#dbc8b8;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .projects .btn:hover {
+
+    background: #606c38;
+    color: #f7fff7;
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .project-item h3 {
+    margin-top: 0;
+  }
+  .projects h1, 
+  .projects h2,
+  .projects h3 {
+    color: #F7FFF7;
+    font-family:"merriweather";
+  }
+  .projects p{
+    color:#F7FFF7;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  /* Education
+  ------------------------------------*/
+  .education {
+    
+    background-color: #eecaa0;
+    background-position: top right;
+    padding-bottom: 100px;
+  }
+  .education p {
+    width: 60%;
+  }
+  .education h1, h2, h3, p {
+    color: #343434;
+  }
+
+  
+  
+  /* Contact Info
+  ------------------------------------*/
+  footer {
+    
+    background-color: #343434;
+  }
+  footer h2 {
+    color: #F7FFF7;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+    color: #606c38
+  
+  }
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 2em;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+  img {
+    width: 200px;
+  }
+}
